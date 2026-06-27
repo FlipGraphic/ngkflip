@@ -3,104 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hot Deals - NGKFlip</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-bg: #000000;
-            --secondary-bg: #121212;
-            --text-primary: #ffffff;
-            --text-secondary: #cccccc;
-            --accent-color: #f0b90b;
-            --border-color: #333333;
-            --highlight-bg: #1a1a1a;
-        }
-        
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--secondary-bg);
-            color: var(--text-primary);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-            flex: 1;
-            text-align: center;
-        }
-        
-        h1 {
-            font-size: 2.2rem;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        .coming-soon {
-            background-color: var(--highlight-bg);
-            border-radius: 8px;
-            padding: 30px;
-            margin: 30px 0;
-            font-size: 1.2rem;
-            border-left: 4px solid var(--accent-color);
-        }
-        
-        .emoji {
-            font-size: 2rem;
-            display: block;
-            margin-bottom: 15px;
-        }
-        
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 1.8rem;
-            }
-            
-            .coming-soon {
-                padding: 20px;
-                font-size: 1rem;
-            }
-        }
-    </style>
+    <title>Hot Amazon Deals - NGKFlip</title>
+    <meta name="description" content="Browse featured Amazon deal leads from NGKFlip.">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Include Header -->
     <div id="header"></div>
 
-    <div class="container">
-       <h1>🔥 Hot Deals</h1>
-    
-    <div class="coming-soon">
-        <span class="emoji">🛍️</span>
-        <p>I will be adding more deals here soon!</p>
-    </div>
+    <main class="container">
+        <section class="page-head">
+            <span class="eyebrow">Latest finds</span>
+            <h1 class="page-title">Hot Amazon <span>deals</span>.</h1>
+            <p class="page-intro">Featured links are curated so you can quickly check the current Amazon price, availability, and variations.</p>
+        </section>
 
-    <!-- New Deal: POP MART -->
-    <div style="background-color: var(--highlight-bg); border: 1px solid var(--border-color); border-radius: 10px; padding: 20px; margin: 20px 0; text-align: left;">
-        <h2 style="color: var(--accent-color); margin-bottom: 10px;">POP MART The Monsters - Have a Seat Vinyl Plush Blind Box - Single</h2>
-        <p><strong>Retail:</strong> $27.99</p>
-        <a href="https://amzn.to/44pBDmU" target="_blank">
-            <img src="https://m.media-amazon.com/images/I/61EGy8V+UyL._AC_SL1500_.jpg" alt="POP MART" style="width: 100%; max-width: 300px; border-radius: 8px; margin-bottom: 10px;">
-        </a>
-        <ul style="list-style: none; padding-left: 0;">
-            <li><a href="https://www.amazon.com/gp/product/B0F6T9M4D4?th=1&linkCode=ll1&tag=leadflips-20&linkId=ca127c72f521fa6c833608016cae3980&language=en_US&ref_=as_li_ss_tl" target="_blank">Playful Home - $85.99</a></li>
-            <li><a href="https://www.amazon.com/gp/product/B0F6T9YPLH?th=1&linkCode=ll1&tag=leadflips-20&linkId=89bb1821b5d6fa7c9d0473d4f9a8eb8f&language=en_US&ref_=as_li_ss_tl" target="_blank">Rolling Gems - $57.99</a></li>
-            <li><a href="https://www.amazon.com/gp/product/B0F6TVJXRZ?th=1&linkCode=ll1&tag=leadflips-20&linkId=09ae3c3e8de4ffacdd3810c353e57f4d&language=en_US&ref_=as_li_ss_tl" target="_blank">Juice Maker - $57.99</a></li>
-            <li><a href="https://www.amazon.com/gp/product/B0F6TWQ4SV?th=1&linkCode=ll1&tag=leadflips-20&linkId=d1b17e8bb49e0bab77fa585e8bfc5fda&language=en_US&ref_=as_li_ss_tl" target="_blank">Click-Fix-Lab - $43.99</a></li>
-            <li><a href="https://www.amazon.com/gp/product/B0F6V4B4QV?th=1&linkCode=ll1&tag=leadflips-20&linkId=92a747a22e15c77d4ed2de09246eb9aa&language=en_US&ref_=as_li_ss_tl" target="_blank">Jam Graffiti - $43.99</a></li>
-        </ul>
-    </div>
-</div>
+        <section class="deal-grid" id="live-deals" aria-label="Hot deals">
+            <article class="deal-card">
+                <a href="https://amzn.to/44pBDmU" target="_blank" rel="noopener sponsored">
+                    <img class="deal-image" src="https://m.media-amazon.com/images/I/61EGy8V+UyL._AC_SL1500_.jpg" alt="POP MART The Monsters Have a Seat vinyl plush blind box">
+                </a>
+                <div class="deal-content">
+                    <span class="deal-tag">Collectible</span>
+                    <h3>POP MART The Monsters - Have a Seat Vinyl Plush Blind Box</h3>
+                    <div class="deal-meta">
+                        <span>Retail reference: $27.99</span>
+                        <span>Amazon listings vary</span>
+                    </div>
+                    <p>Compare available versions and check which listing has the best current price.</p>
+                    <ul class="deal-options">
+                        <li><a href="https://www.amazon.com/gp/product/B0F6T9M4D4?th=1&linkCode=ll1&tag=leadflips-20&linkId=ca127c72f521fa6c833608016cae3980&language=en_US&ref_=as_li_ss_tl" target="_blank" rel="noopener sponsored">Playful Home <span>$85.99</span></a></li>
+                        <li><a href="https://www.amazon.com/gp/product/B0F6T9YPLH?th=1&linkCode=ll1&tag=leadflips-20&linkId=89bb1821b5d6fa7c9d0473d4f9a8eb8f&language=en_US&ref_=as_li_ss_tl" target="_blank" rel="noopener sponsored">Rolling Gems <span>$57.99</span></a></li>
+                        <li><a href="https://www.amazon.com/gp/product/B0F6TVJXRZ?th=1&linkCode=ll1&tag=leadflips-20&linkId=09ae3c3e8de4ffacdd3810c353e57f4d&language=en_US&ref_=as_li_ss_tl" target="_blank" rel="noopener sponsored">Juice Maker <span>$57.99</span></a></li>
+                        <li><a href="https://www.amazon.com/gp/product/B0F6TWQ4SV?th=1&linkCode=ll1&tag=leadflips-20&linkId=d1b17e8bb49e0bab77fa585e8bfc5fda&language=en_US&ref_=as_li_ss_tl" target="_blank" rel="noopener sponsored">Click-Fix-Lab <span>$43.99</span></a></li>
+                        <li><a href="https://www.amazon.com/gp/product/B0F6V4B4QV?th=1&linkCode=ll1&tag=leadflips-20&linkId=92a747a22e15c77d4ed2de09246eb9aa&language=en_US&ref_=as_li_ss_tl" target="_blank" rel="noopener sponsored">Jam Graffiti <span>$43.99</span></a></li>
+                    </ul>
+                </div>
+            </article>
 
-    <!-- Include Footer -->
+            <article class="info-card">
+                <span class="deal-tag">Coming next</span>
+                <h3>Daily deal slots</h3>
+                <p>Add new product cards here as you find strong leads. The layout is ready for images, notes, prices, and Amazon affiliate links.</p>
+                <div class="card-actions">
+                    <a class="button secondary" href="contact.html">Submit a deal idea</a>
+                </div>
+            </article>
+
+            <article class="info-card">
+                <span class="deal-tag">Smart shopping</span>
+                <h3>Always verify live prices</h3>
+                <p>Amazon prices and availability can change quickly. Click through to confirm the current listing before buying or planning a flip.</p>
+                <div class="card-actions">
+                    <a class="button primary" href="shop.html">Browse categories</a>
+                </div>
+            </article>
+        </section>
+    </main>
+
     <div id="footer"></div>
-
     <script src="script.js"></script>
 </body>
 </html>

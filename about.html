@@ -3,126 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - NGKFlip</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-bg: #000000;
-            --secondary-bg: #121212;
-            --text-primary: #ffffff;
-            --text-secondary: #cccccc;
-            --accent-color: #f0b90b;
-            --border-color: #333333;
-            --highlight-bg: #1a1a1a;
-        }
-        
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--secondary-bg);
-            color: var(--text-primary);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-            flex: 1;
-        }
-        
-        h1 {
-            font-size: 2.2rem;
-            margin-bottom: 30px;
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: var(--text-primary);
-        }
-        
-        h2 {
-            font-size: 1.5rem;
-            margin: 40px 0 15px 0;
-            color: var(--text-primary);
-            font-weight: 600;
-        }
-        
-        h3 {
-            font-size: 1.3rem;
-            margin: 30px 0 15px;
-            color: var(--text-primary);
-            font-weight: 500;
-        }
-        
-        p {
-            font-size: 1rem;
-            margin-bottom: 20px;
-            color: var(--text-secondary);
-            text-align: left;
-            line-height: 1.6;
-        }
-        
-        .disclosure-box {
-            background-color: var(--highlight-bg);
-            border-left: 4px solid var(--accent-color);
-            padding: 20px;
-            margin: 30px 0;
-            font-size: 0.95rem;
-        }
-        
-        @media (max-width: 768px) {
-            .container {
-                margin: 30px auto;
-            }
-            
-            h1 {
-                font-size: 1.8rem;
-            }
-            
-            h2 {
-                font-size: 1.3rem;
-            }
-            
-            h3 {
-                font-size: 1.1rem;
-            }
-        }
-    </style>
+    <title>About NGKFlip</title>
+    <meta name="description" content="Learn how NGKFlip shares Amazon deal leads and affiliate recommendations.">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Include Header -->
     <div id="header"></div>
 
-    <div class="container">
-        <h1>About NGKFlip</h1>
-        <p>Welcome to NGKFlip! Our mission is to bring you the hottest deals and product recommendations while keeping things 100% transparent.</p>
-        
-        <h2>Why We Use Amazon Affiliate Links</h2>
-        <p>At NGKFlip, we use Amazon affiliate links to earn a small commission on products purchased through our website. This commission is essential for maintaining our site and providing you with high-quality content and valuable recommendations.</p>
-        
-        <div class="disclosure-box">
-            <p>NGKFlip participates in the Amazon Services LLC Associates Program, which is an affiliate advertising program designed to provide a means for websites to earn advertising fees by advertising and linking to Amazon.com</p>
-        </div>
-        
-        <h2>How It Works</h2>
-        <p>When you click on an Amazon affiliate link on NGKFlip, it contains a unique tracking code. If you make a purchase on Amazon within a specified period after clicking the link, we receive a commission.</p>
-        
-        <h2>Our Commitment to Transparency</h2>
-        <p>We are committed to transparency regarding our use of affiliate links. This practice does not affect the integrity of our content or product recommendations. Our goal is to provide honest and useful information to our audience.</p>
-        
-        <h2>Your Support Matters</h2>
-        <p>By using our affiliate links, you're helping us keep NGKFlip running. Your support allows us to continue sharing valuable deals and insights with our community.</p>
-        
-        <h2>Thank You!</h2>
-        <p>We truly appreciate every visitor who trusts us for deal-hunting and recommendations. If you ever have any questions, feel free to reach out through our contact page!</p>
-    </div>
+    <main class="container content-stack">
+        <section class="page-head">
+            <span class="eyebrow">About NGKFlip</span>
+            <h1 class="page-title">A cleaner way to check Amazon deal leads.</h1>
+            <p class="page-intro">NGKFlip is built for shoppers who want quick access to interesting Amazon finds without digging through clutter.</p>
+        </section>
 
-    <!-- Include Footer -->
+        <section class="info-card">
+            <h2>What we share</h2>
+            <p>We highlight products, Amazon categories, and deal leads that may be useful for bargain hunting, personal shopping, or flip research. Prices can move quickly, so the final check always happens on Amazon.</p>
+        </section>
+
+        <section class="info-card">
+            <h2>Why we use affiliate links</h2>
+            <p>Some links on NGKFlip are Amazon affiliate links. If you purchase through one of those links, NGKFlip may earn a small commission at no extra cost to you.</p>
+        </section>
+
+        <section class="disclosure-box">
+            <h2>Transparency matters</h2>
+            <p>NGKFlip participates in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com.</p>
+        </section>
+    </main>
+
     <div id="footer"></div>
-
     <script src="script.js"></script>
 </body>
 </html>

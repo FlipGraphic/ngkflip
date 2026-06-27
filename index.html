@@ -3,22 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NGKFlip - Deals & Flips</title>
+    <title>NGKFlip - Amazon Deals Worth Checking</title>
+    <meta name="description" content="NGKFlip helps shoppers spot interesting Amazon deals, category finds, and flip-worthy products.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Include Header -->
     <div id="header"></div>
 
-    <div class="container">
-        <h1>Welcome to NGKFlip</h1>
-        <p>Find the hottest deals and flips before they sell out!</p>
-    </div>
+    <main>
+        <section class="hero">
+            <div class="hero-copy">
+                <span class="eyebrow">Amazon deal finder</span>
+                <h1>Find Amazon deals before they disappear.</h1>
+                <p class="hero-text">NGKFlip keeps the hunt simple: fresh product leads, useful categories, and affiliate links that make it easy to check prices fast.</p>
+                <div class="hero-actions">
+                    <a class="button primary" href="deals.html">Browse hot deals</a>
+                    <a class="button secondary" href="shop.html">Shop categories</a>
+                </div>
 
-    <!-- Include Footer -->
+                <div class="stat-row" aria-label="Site highlights">
+                    <div class="stat">
+                        <strong>Fast</strong>
+                        <span>Quick links to Amazon finds</span>
+                    </div>
+                    <div class="stat">
+                        <strong>Clear</strong>
+                        <span>Affiliate disclosure up front</span>
+                    </div>
+                    <div class="stat">
+                        <strong>Focused</strong>
+                        <span>Deals, flips, and useful picks</span>
+                    </div>
+                </div>
+            </div>
+
+            <article class="hero-panel" aria-label="Featured deal preview">
+                <a href="deals.html">
+                    <img src="https://images.unsplash.com/photo-1607082349566-187342175e2f?auto=format&fit=crop&w=900&q=80" alt="Stacked shopping packages ready for delivery">
+                </a>
+                <div class="hero-panel-body">
+                    <span class="deal-tag">Featured lead</span>
+                    <h2>Pop Mart blind box finds</h2>
+                    <p>Check the current Amazon listings and compare the available versions in one place.</p>
+                    <div class="deal-price">
+                        <strong>$43.99+</strong>
+                        <span>varies</span>
+                    </div>
+                    <a class="button primary" href="deals.html">See the listings</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <div>
+                    <span class="mini-label">How it works</span>
+                    <h2>Built for quick deal checks.</h2>
+                </div>
+                <p>Instead of digging through random links, use NGKFlip as a clean starting point for Amazon finds and categories that might be worth a closer look.</p>
+            </div>
+
+            <div class="category-grid">
+                <div class="category-tile">
+                    <strong>Spot the item</strong>
+                    <p>See featured products with images, notes, and current link options.</p>
+                </div>
+                <div class="category-tile">
+                    <strong>Compare listings</strong>
+                    <p>Open multiple Amazon variations from a single deal card.</p>
+                </div>
+                <div class="category-tile">
+                    <strong>Shop by category</strong>
+                    <p>Jump into warehouse, grocery, beauty, phones, and other useful sections.</p>
+                </div>
+                <div class="category-tile">
+                    <strong>Stay transparent</strong>
+                    <p>Affiliate links are disclosed so you know how the site is supported.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <div id="footer"></div>
-
     <script src="script.js"></script>
 </body>
 </html>

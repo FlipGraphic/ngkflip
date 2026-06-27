@@ -3,195 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop - NGKFlip</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-bg: #000000;
-            --secondary-bg: #121212;
-            --text-primary: #ffffff;
-            --text-secondary: #cccccc;
-            --accent-color: #f0b90b;
-            --border-color: #333333;
-            --highlight-bg: #1a1a1a;
-        }
-        
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--secondary-bg);
-            color: var(--text-primary);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 0 20px;
-            flex: 1;
-        }
-        
-        h1 {
-            font-size: 2.2rem;
-            margin-bottom: 30px;
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        h2 {
-            font-size: 1.5rem;
-            margin: 40px 0 20px;
-            color: var(--text-primary);
-            font-weight: 600;
-        }
-        
-        .shop-intro {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-        
-        .product-card {
-            background-color: var(--highlight-bg);
-            border-radius: 8px;
-            overflow: hidden;
-            transition: transform 0.3s ease;
-        }
-        
-        .product-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .product-image {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        
-        .product-info {
-            padding: 20px;
-        }
-        
-        .product-title {
-            font-size: 1.1rem;
-            margin-bottom: 10px;
-        }
-        
-        .shop-now-btn {
-            display: inline-block;
-            background-color: var(--accent-color);
-            color: var(--primary-bg);
-            padding: 10px 20px;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: 600;
-            margin-top: 15px;
-            transition: background-color 0.3s;
-        }
-        
-        .shop-now-btn:hover {
-            background-color: #e0a800;
-        }
-        
-        .disclosure-box {
-            background-color: var(--highlight-bg);
-            border-left: 4px solid var(--accent-color);
-            padding: 20px;
-            margin: 40px 0;
-            font-size: 0.9rem;
-        }
-        
-        @media (max-width: 768px) {
-            .product-grid {
-                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-                gap: 20px;
-            }
-            
-            h1 {
-                font-size: 1.8rem;
-            }
-        }
-    </style>
+    <title>Shop Amazon Categories - NGKFlip</title>
+    <meta name="description" content="Shop useful Amazon categories and affiliate picks from NGKFlip.">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Include Header -->
     <div id="header"></div>
 
-    <div class="container">
-        <h1>NGKFlip Shop</h1>
-        
-        <div class="shop-intro">
-            <p>Discover the hottest deals and product recommendations while keeping things 100% transparent.</p>
-        </div>
-        
-        <div class="disclosure-box">
-            <p>NGKFlip participates in the Amazon Services LLC Associates Program, which is an affiliate advertising program designed to provide a means for websites to earn advertising fees by advertising and linking to Amazon.com</p>
-        </div>
-        
-        <h2>Featured Products</h2>
-        
-        <div class="product-grid">
-            <!-- Product 1 -->
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1553413077-190dd305871c?fit=crop&w=500" alt="Amazon Warehouse Deals" class="product-image">
+    <main class="container">
+        <section class="page-head">
+            <span class="eyebrow">Shop faster</span>
+            <h1 class="page-title">Amazon categories for deal hunters.</h1>
+            <p class="page-intro">Jump straight into useful Amazon sections. Some links are affiliate links and may earn NGKFlip a commission at no extra cost to you.</p>
+        </section>
+
+        <section class="product-grid" aria-label="Featured Amazon categories">
+            <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&w=700&q=80" alt="Packed online shopping boxes" class="product-image">
                 <div class="product-info">
+                    <span class="deal-tag">Warehouse</span>
                     <h3 class="product-title">Amazon Warehouse Used Deals</h3>
-                    <a href="https://amzn.to/4hZ1vcT" target="_blank" class="shop-now-btn">Shop Now</a>
+                    <p>Check open-box and used offers across Amazon categories.</p>
+                    <a href="https://amzn.to/4hZ1vcT" target="_blank" rel="noopener sponsored" class="shop-now-btn">Shop now</a>
                 </div>
-            </div>
-            
-            
-            <!-- Product 3 -->
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1493236272120-200db0da1927?fit=crop&w=500" alt="Foods & Grocery" class="product-image">
+            </article>
+
+            <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=700&q=80" alt="Fresh groceries in a market display" class="product-image">
                 <div class="product-info">
-                    <h3 class="product-title">Foods & Grocery</h3>
-                    <a href="https://amzn.to/440KJqf" class="shop-now-btn">Shop Now</a>
+                    <span class="deal-tag">Everyday</span>
+                    <h3 class="product-title">Foods and Grocery</h3>
+                    <p>Browse pantry, grocery, snack, and household essentials.</p>
+                    <a href="https://amzn.to/440KJqf" target="_blank" rel="noopener sponsored" class="shop-now-btn">Shop now</a>
                 </div>
-            </div>
-            
-            <!-- Product 4 -->
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?fit=crop&w=500" alt="Health and Beauty" class="product-image">
+            </article>
+
+            <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=700&q=80" alt="Beauty products arranged on a vanity" class="product-image">
                 <div class="product-info">
+                    <span class="deal-tag">Personal care</span>
                     <h3 class="product-title">Health and Beauty</h3>
-                    <a href="https://amzn.to/41VhmEE" class="shop-now-btn">Shop Now</a>
+                    <p>Look for useful personal care, skincare, and beauty offers.</p>
+                    <a href="https://amzn.to/41VhmEE" target="_blank" rel="noopener sponsored" class="shop-now-btn">Shop now</a>
                 </div>
-            </div>
-            
-            <!-- Product 5 -->
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1559087316-47ce212113b7?fit=crop&w=500" alt="Nouri Products" class="product-image">
+            </article>
+
+            <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db?auto=format&fit=crop&w=700&q=80" alt="Supplement capsules and wellness product containers" class="product-image">
                 <div class="product-info">
+                    <span class="deal-tag">Wellness</span>
                     <h3 class="product-title">Nouri Products</h3>
-                    <a href="https://amzn.to/3RrKNb6" class="shop-now-btn">Shop Now</a>
+                    <p>Open the current Nouri product listings on Amazon.</p>
+                    <a href="https://amzn.to/3RrKNb6" target="_blank" rel="noopener sponsored" class="shop-now-btn">Shop now</a>
                 </div>
-            </div>
-            
-            <!-- Product 6 -->
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1586880244543-0528a802be97?fit=crop&w=500" alt="Mobile Phones" class="product-image">
+            </article>
+
+            <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=700&q=80" alt="Modern smartphone on a clean table" class="product-image">
                 <div class="product-info">
+                    <span class="deal-tag">Tech</span>
                     <h3 class="product-title">Mobile Cell Phones</h3>
-                    <a href="https://amzn.to/4chkbn2" class="shop-now-btn">Shop Now</a>
+                    <p>Browse phones and related mobile deals on Amazon.</p>
+                    <a href="https://amzn.to/4chkbn2" target="_blank" rel="noopener sponsored" class="shop-now-btn">Shop now</a>
                 </div>
-            </div>
-        </div>
-    </div>
+            </article>
+        </section>
+    </main>
 
-    <!-- Include Footer -->
     <div id="footer"></div>
-
     <script src="script.js"></script>
 </body>
 </html>

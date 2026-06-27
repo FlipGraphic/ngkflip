@@ -4,111 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazon Affiliate Disclosure - NGKFlip</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-bg: #000000;
-            --secondary-bg: #121212;
-            --text-primary: #ffffff;
-            --text-secondary: #cccccc;
-            --accent-color: #f0b90b;
-            --border-color: #333333;
-            --highlight-bg: #1a1a1a;
-        }
-        
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--secondary-bg);
-            color: var(--text-primary);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            line-height: 1.6;
-        }
-        
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-            flex: 1;
-        }
-        
-        h1 {
-            font-size: 2.2rem;
-            margin-bottom: 30px;
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        .disclosure-box {
-            background-color: var(--highlight-bg);
-            border-left: 4px solid var(--accent-color);
-            padding: 25px;
-            margin: 30px 0;
-            border-radius: 0 8px 8px 0;
-        }
-        
-        p {
-            font-size: 1rem;
-            margin-bottom: 20px;
-            color: var(--text-secondary);
-        }
-        
-        a {
-            color: var(--accent-color);
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-        
-        a:hover {
-            text-decoration: underline;
-        }
-        
-        .asterisk-note {
-            font-size: 0.9rem;
-            color: #999;
-            font-style: italic;
-            margin-top: -15px;
-            margin-bottom: 25px;
-        }
-        
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 1.8rem;
-            }
-            
-            .disclosure-box {
-                padding: 20px;
-            }
-        }
-    </style>
+    <meta name="description" content="Read NGKFlip's Amazon affiliate disclosure.">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Include Header -->
     <div id="header"></div>
 
-    <div class="container">
-        <h1>Amazon Affiliate Disclosure</h1>
-        
-        <div class="disclosure-box">
+    <main class="container content-stack">
+        <section class="page-head">
+            <span class="eyebrow">Affiliate disclosure</span>
+            <h1 class="page-title">How NGKFlip earns from links.</h1>
+            <p class="page-intro">We keep the affiliate relationship clear so you can use the site with confidence.</p>
+        </section>
+
+        <section class="disclosure-box">
+            <h2>Amazon Associates disclosure</h2>
             <p>NGKFlip is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com.</p>
-        </div>
-        
-        <p>Some links on this site are affiliate links, meaning we may earn a small commission—at no extra cost to you—if you make a purchase through them. These links are marked with an asterisk (*) for transparency.</p>
-        
-        <p class="asterisk-note">*Affiliate links will be clearly marked with this asterisk symbol throughout the site.</p>
-        
-        <p>Your support helps us continue to provide valuable content and recommendations. We only recommend products we genuinely believe in, and the affiliate commissions help maintain our site's operations.</p>
-        
-        <p>If you have any questions about our affiliate relationships or how these links work, please feel free to <a href="contact.html">reach out to us</a>.</p>
-    </div>
+        </section>
 
-    <!-- Include Footer -->
+        <section class="info-card">
+            <h2>What this means</h2>
+            <p>Some links on this site are affiliate links. If you make a purchase through them, we may earn a small commission at no extra cost to you. Prices, availability, and product details should always be confirmed on Amazon before purchasing.</p>
+        </section>
+
+        <section class="info-card">
+            <h2>Questions</h2>
+            <p>If you have questions about our affiliate links or recommendations, please <a href="contact.html">contact NGKFlip</a>.</p>
+        </section>
+    </main>
+
     <div id="footer"></div>
-
     <script src="script.js"></script>
 </body>
 </html>
